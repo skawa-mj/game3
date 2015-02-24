@@ -7,7 +7,24 @@
 
 <div data-role="page" id="rankingPage">
 
-	<!-- ここにプログラムを記述 -->
+	<!-- ヘッダーエリア -->
+	<div data-role="header">
+		<h1>ランキング</h1>
+	</div>
+
+	<!-- コンテンツエリア -->
+	<div data-role="content" class="center">
+		<p class="middleText">
+			あなたは<%=request.getAttribute("yourRank") %>位
+		</p>
+		<p>
+			High Score　
+			<%=request.getAttribute("highScore") %>pt<br/>
+			Your Score　
+			<%=request.getAttribute("yourScore")  %>pt
+		</p>
+		<a href="/game.jsp" data-role="button">ゲームへ戻る</a>
+	</div>
 
 </div>
 
